@@ -1,0 +1,219 @@
+/* Google Font Azeret Mono link */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+/* Google Font Azeret Mono link */
+
+/* Root color and font family */
+:root {
+    --azeret-mono: "Azeret Mono", serif;
+    --dark-primary: #0D1321;
+    --dark-secondary: #0d1321b2;
+}
+
+
+/* Root color and font family */
+/* basic css desing file */
+/* Target all browsers */
+input[type=number] {
+    -moz-appearance: textfield;
+    /* For Firefox */
+    -webkit-appearance: none;
+    /* For Chrome, Safari, Edge */
+    appearance: none;
+    /* For modern browsers */
+}
+
+/* Optional: Hide the up/down arrows in WebKit-based browsers (like Chrome) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+/* check box color change  */
+input[type="checkbox"]:checked {
+    accent-color: var(--logo-color);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+span,
+table,
+footer,
+nav,
+div,
+section {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+/* basic css style desing ended */
+/* common css */
+.title {
+    font-family: var(--azeret-mono);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--dark-primary);
+}
+
+.sub-title {
+    font-family: var(--azeret-mono);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--dark-primary);
+}
+
+/* common css */
+
+/* header section css part start  */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.logo-link {
+    font-family: var(--azeret-mono);
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--dark-primary);
+}
+
+.download-link {
+    border: none;
+    outline: none;
+    padding: 17px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--dark-primary);
+    font-family: var(--azeret-mono);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-primary);
+
+}
+
+/* banner section css part start  */
+.banner {
+    width: 100%;
+    background-image: url(../images/Hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 26px 0px 48px 0px;
+}
+
+.banner-content {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 68px;
+    margin-top: 32px;
+}
+
+.banner-subtitle {
+
+    margin-top: 24px;
+}
+
+.banner-btn-main {
+    margin-top: 50px;
+}
+
+.banner-btn {
+    padding: 21px 24px;
+    background-color: var(--dark-primary);
+    border-radius: 8px;
+    font-family: var(--azeret-mono);
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+/* banner section css part end */
+/* header section responsive part start  */
+    @media screen and (max-width:576px) {
+       .container{
+        width: 95%;
+        margin: 0 auto;
+       }
+       .header-top{
+        padding: 5px 0px;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 20px;
+       }
+
+       .banner-content{
+        width: 95%;
+       }
+    .banner-title{
+        font-size: 28px;
+        line-height: 36px;
+
+    }
+
+    }
+/* header section responsive part end */
+/* header section css part end*/
