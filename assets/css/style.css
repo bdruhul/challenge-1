@@ -100,6 +100,7 @@ section {
 }
 
 
+
 /* basic css style desing ended */
 /* common css */
 .title {
@@ -118,6 +119,18 @@ section {
     color: var(--dark-primary);
 }
 
+.text-center {
+    text-align: center;
+}
+.text-left{
+    text-align: left !important;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* common css */
 
 /* header section css part start  */
@@ -192,7 +205,8 @@ section {
     transition: all linear 0.3s;
 
 }
-.banner-btn:hover{
+
+.banner-btn:hover {
     background-color: #fff;
     border: 1px solid var(--dark-primary);
     color: var(--dark-primary);
@@ -201,27 +215,88 @@ section {
 
 /* banner section css part end */
 /* header section responsive part start  */
-    @media screen and (max-width:576px) {
-       .container{
+@media screen and (max-width:576px) {
+    .container {
         width: 95%;
         margin: 0 auto;
-       }
-       .header-top{
+    }
+
+    .header-top {
         padding: 5px 0px;
         flex-direction: column;
         gap: 15px;
         margin-bottom: 20px;
-       }
+    }
 
-       .banner-content{
+    .banner-content {
         width: 95%;
-       }
-    .banner-title{
+    }
+
+    .banner-title {
         font-size: 28px;
         line-height: 36px;
 
     }
 
-    }
+}
+
 /* header section responsive part end */
 /* header section css part end*/
+/* main part css start  */
+main {
+    margin-top: 50px;
+}
+
+/* why web css part start  */
+.why-web {
+    background-color: #0d13210b;
+    padding: 80px 97px;
+    border-radius: 8px;
+
+}
+.why-web-top-title{
+    font-weight: 800;
+}
+
+.why-web-top-subtitle {
+    margin-top: 16px;
+}
+.why-web-content{
+    width: 100%;
+    background-color: #fff;
+    margin-top: 32px;
+    padding: 48px;
+    border-radius: 16px;
+
+}
+.why-c-left, .why-c-right{
+    width: 50%;
+}
+.why-c-right{
+    text-align: end;
+}
+
+.why-web-content{
+    align-items: start;
+}
+.why-web-content-sub-title{
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.why-web-btn{
+    padding: 12px 20px;
+    border: 1px solid var(--dark-primary);
+    font-family: var(--azeret-mono);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-primary);
+}
+.w-40{
+    width: 40%;
+}
+.w-60{
+    width: 60%;
+}
+/* why web css part end */
+
+/* main part css end */
