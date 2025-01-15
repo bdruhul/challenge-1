@@ -290,12 +290,43 @@ main {
     font-size: 20px;
     font-weight: 600;
     color: var(--dark-primary);
+    transition: all linear 0.3s;
+    border-radius: 5px;
+}
+.why-web-btn:hover{
+    background-color: var(--dark-primary);
+    border: 1px solid var(--dark-primary);
+    color: #fff;
+    transition: all linear 0.3s;
 }
 .w-40{
     width: 40%;
 }
 .w-60{
     width: 60%;
+}
+@media screen and (max-width:576px) {
+
+    .d-flex{
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .why-web {
+        padding: 10px;
+
+    }
+    .why-web-content{
+        padding: 5px;
+    }
+
+    .why-c-left, .why-c-right{
+        width: 100%;
+        margin-top: 10px;
+        text-align: center !important;
+    }
+    .flex-clm{
+        flex-direction: column !important;
+    }
 }
 /* why web css part end */
 
